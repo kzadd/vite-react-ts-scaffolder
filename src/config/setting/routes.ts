@@ -1,5 +1,4 @@
-const routes = {
-  root: '/'
-}
+// TODO: TS
+const routes = { root: '/' }
 
 export default routes

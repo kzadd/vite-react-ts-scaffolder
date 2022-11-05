@@ -1,10 +1,20 @@
+// TODO: TS
 import React from 'react'
-import ReactDOM from 'react-dom/client'
+import { createRoot } from 'react-dom/client'
 import { RouterProvider } from 'react-router-dom'
-import Routing from './Routing'
+import CssBaseline from '@mui/material/CssBaseline'
+import { ThemeProvider } from 'styled-components'
+import Routing from '@/routing'
+import Theme from '@/theme'
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+const rootElement = document.getElementById('root') as HTMLElement
+const root = createRoot(rootElement)
+
+root.render(
   <React.StrictMode>
-    <RouterProvider router={Routing} />
+    <ThemeProvider theme={Theme}>
+      <CssBaseline />
+      <RouterProvider router={Routing} />
+    </ThemeProvider>
   </React.StrictMode>
 )

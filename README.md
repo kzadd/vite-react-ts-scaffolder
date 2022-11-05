@@ -1,4 +1,4 @@
-# Scaffolder for Vite + React + Typescript + Eslint + Prettier + Lint staged + Husky + Commitlint + React router + Styled components + MUI
+# Scaffolder for Vite + React + Typescript + Eslint + Prettier + Lint staged + Husky + Commitlint + React router + Styled components + MUI + React toolkit
 
 The package where lives the scaffolder project.
 
